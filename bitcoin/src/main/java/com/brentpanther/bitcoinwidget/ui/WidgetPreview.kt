@@ -28,6 +28,23 @@ import com.brentpanther.bitcoinwidget.strategy.presenter.ComposePreviewWidgetPre
 fun WidgetPreview(widget: Widget, fixedSize: Boolean, modifier: Modifier = Modifier) {
     Row(modifier.fillMaxWidth()) {
         Box {
+            val isSquare = com.brentpanther.bitcoinwidget.WidgetApplication.instance.isWidgetSquare(widget.widgetId)
+            val (actualWidth, actualHeight) = com.brentpanther.bitcoinwidget.WidgetApplication.instance.getActualWidgetSize(widget.widgetId)
+            val previewHeight: Int
+            val previewWidth: Int
+            if (actualWidth > 0 && actualHeight > 0) {
+                val ratio = actualWidth.toFloat() / actualHeight.toFloat()
+                val baseHeight = 80.dp
+                previewHeight = R.dimen.widget_preview_height_1x1
+                previewWidth = if (ratio >= 1.2f) {
+                    R.dimen.widget_preview_width
+                } else {
+                    R.dimen.widget_preview_width_1x1
+                }
+            } else {
+                previewHeight = if (isSquare) R.dimen.widget_preview_height_1x1 else R.dimen.widget_preview_height
+                previewWidth = if (isSquare) R.dimen.widget_preview_width_1x1 else R.dimen.widget_preview_width
+            }
             Image(
                 painterResource(R.drawable.bg),
                 null,
@@ -53,8 +70,8 @@ fun WidgetPreview(widget: Widget, fixedSize: Boolean, modifier: Modifier = Modif
                     },
                     modifier = Modifier
                         .align(Alignment.Center)
-                        .height(dimensionResource(R.dimen.widget_preview_height))
-                        .width(dimensionResource(R.dimen.widget_preview_width))
+                        .height(dimensionResource(previewHeight))
+                        .width(dimensionResource(previewWidth))
                 )
             }
         }

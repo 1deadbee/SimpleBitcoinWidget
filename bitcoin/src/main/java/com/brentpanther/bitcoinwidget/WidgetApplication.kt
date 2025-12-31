@@ -33,6 +33,33 @@ class WidgetApplication : Application() {
         }
     }
 
+    fun isWidget1x1(widgetId: Int): Boolean {
+        val widgetInfo = AppWidgetManager.getInstance(this).getAppWidgetInfo(widgetId)
+            ?: return false
+        return when (widgetInfo.provider.className) {
+            WidgetProvider1x1::class.qualifiedName -> true
+            ValueWidgetProvider1x1::class.qualifiedName -> true
+            else -> false
+        }
+    }
+
+    fun getActualWidgetSize(widgetId: Int): Pair<Int, Int> {
+        val appWidgetManager = AppWidgetManager.getInstance(this)
+        val options = appWidgetManager.getAppWidgetOptions(widgetId)
+        val width = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH, 0)
+        val height = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MAX_HEIGHT, 0)
+        return Pair(width, height)
+    }
+
+    fun isWidgetSquare(widgetId: Int): Boolean {
+        val (width, height) = getActualWidgetSize(widgetId)
+        if (width == 0 || height == 0) {
+            return isWidget1x1(widgetId)
+        }
+        val ratio = width.toFloat() / height.toFloat()
+        return ratio in 0.8f..1.2f
+    }
+
     override fun onCreate() {
         super.onCreate()
         instance = this

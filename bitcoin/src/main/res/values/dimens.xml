@@ -2,4 +2,6 @@
 <resources>
     <dimen name="widget_preview_width">150dp</dimen>
     <dimen name="widget_preview_height">80dp</dimen>
+    <dimen name="widget_preview_width_1x1">80dp</dimen>
+    <dimen name="widget_preview_height_1x1">80dp</dimen>
 </resources>

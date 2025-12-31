@@ -90,8 +90,11 @@ class RemoteWidgetPresenter(context: Context, widget: Widget) : WidgetPresenter 
         var availableHeight = height.dpToPx() - px
         // if we can't figure out the widget size, fallback to what the app uses
         if (availableWidth <= 0 || availableHeight <= 0) {
-            availableHeight = context.resources.getDimensionPixelSize(R.dimen.widget_preview_height).toFloat()
-            availableWidth = context.resources.getDimensionPixelSize(R.dimen.widget_preview_width).toFloat()
+            val isSquare = com.brentpanther.bitcoinwidget.WidgetApplication.instance.isWidgetSquare(widgetId)
+            val heightDimen = if (isSquare) R.dimen.widget_preview_height_1x1 else R.dimen.widget_preview_height
+            val widthDimen = if (isSquare) R.dimen.widget_preview_width_1x1 else R.dimen.widget_preview_width
+            availableHeight = context.resources.getDimensionPixelSize(heightDimen).toFloat()
+            availableWidth = context.resources.getDimensionPixelSize(widthDimen).toFloat()
         }
         return RectF(0F, 0F, availableWidth, availableHeight)
     }
