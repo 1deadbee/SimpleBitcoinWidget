@@ -48,6 +48,11 @@ class ManageWidgetsViewModel : ViewModel() {
         }
         WidgetProvider.refreshWidgets(WidgetApplication.instance, restart = true)
     }
+    fun setBitcoinOnly(value: Boolean) {
+        setValue {
+            it.bitcoinOnly = value
+        }
+    }
 
     companion object {
         const val DISMISS_TIME: Long = 172800000L

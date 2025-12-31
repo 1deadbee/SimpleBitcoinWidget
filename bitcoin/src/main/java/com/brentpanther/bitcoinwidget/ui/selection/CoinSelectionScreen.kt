@@ -7,6 +7,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -113,7 +114,30 @@ fun CoinSelectionScreen(
     ) { paddingValues ->
 
         val coinResult by viewModel.coins.collectAsState(null)
+        val bitcoinOnly by viewModel.bitcoinOnly.collectAsState(false)
         Column(Modifier.padding(paddingValues)) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(appBarScrollColor(scrollBehavior))
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+                    .clickable {
+                        coroutineScope.launch {
+                            viewModel.toggleBitcoinOnly(context, widgetId, navController)
+                        }
+                    },
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = stringResource(R.string.title_bitcoin_only),
+                    style = MaterialTheme.typography.bodyLarge,
+                    modifier = Modifier.weight(1f)
+                )
+                androidx.compose.material3.Checkbox(
+                    checked = bitcoinOnly,
+                    onCheckedChange = null
+                )
+            }
             OutlinedTextField(
                 value = searchText,
                 onValueChange = {

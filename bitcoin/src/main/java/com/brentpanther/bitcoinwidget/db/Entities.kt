@@ -58,7 +58,8 @@ data class Configuration(
     @PrimaryKey(autoGenerate = true) val id: Int,
     var refresh: Int,
     var consistentSize: Boolean,
-    var dataMigrationVersion: Int
+    var dataMigrationVersion: Int,
+    var bitcoinOnly: Boolean
 )
 
 data class ConfigurationWithSizes(var refresh: Int, var consistentSize: Boolean, var portrait: Int, val landscape: Int)

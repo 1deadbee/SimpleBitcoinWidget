@@ -27,7 +27,12 @@ class MainViewModel : ViewModel() {
         val widgetDao = WidgetDatabase.getInstance(WidgetApplication.instance).widgetDao()
         val widget = widgetDao.getByWidgetId(widgetId)
         if (widget == null) {
-            emit("create/{widgetId}")
+            val config = widgetDao.config()
+            if (config.bitcoinOnly) {
+                emit("setting/{widgetId}")
+            } else {
+                emit("create/{widgetId}")
+            }
         } else {
             emit("setting/{widgetId}")
         }

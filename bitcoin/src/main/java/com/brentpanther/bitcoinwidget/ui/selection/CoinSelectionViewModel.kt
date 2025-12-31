@@ -33,6 +33,36 @@ class CoinSelectionViewModel : ViewModel() {
     private val json = Json { ignoreUnknownKeys = true }
     val coins = MutableStateFlow<SearchResponse?>(null)
     val error = MutableStateFlow<Int?>(null)
+    val bitcoinOnly = MutableStateFlow(false)
+
+    init {
+        viewModelScope.launch(Dispatchers.IO) {
+            val dao = WidgetDatabase.getInstance(WidgetApplication.instance).widgetDao()
+            bitcoinOnly.value = dao.config().bitcoinOnly
+        }
+    }
+
+    suspend fun toggleBitcoinOnly(context: Context, widgetId: Int, navController: androidx.navigation.NavController) = withContext(Dispatchers.IO) {
+        val dao = WidgetDatabase.getInstance(context).widgetDao()
+        val config = dao.config()
+        config.bitcoinOnly = !config.bitcoinOnly
+        dao.update(config)
+        bitcoinOnly.emit(config.bitcoinOnly)
+        if (config.bitcoinOnly) {
+            val bitcoinCoinResponse = CoinResponse(
+                name = Coin.BTC.name,
+                id = Coin.BTC.coinName,
+                symbol = Coin.BTC.getSymbol(),
+                thumb = null,
+                large = null,
+                coin = Coin.BTC
+            )
+            createWidget(context, widgetId, bitcoinCoinResponse)
+            withContext(Dispatchers.Main) {
+                navController.navigate("setting/$widgetId")
+            }
+        }
+    }
 
     suspend fun createWidget(context: Context, widgetId: Int, coinEntry: CoinResponse) = withContext(Dispatchers.IO) {
         val widgetType = WidgetApplication.instance.getWidgetType(widgetId)

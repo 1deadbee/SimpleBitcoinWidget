@@ -39,6 +39,21 @@ fun GlobalSettings(viewModel: ManageWidgetsViewModel = viewModel()) {
     if (settings == null) return
     Column {
         SettingsHeader(title = R.string.nav_title_settings, withDivider = false)
+        SettingsSwitch(
+            icon = {
+                Icon(painterResource(R.drawable.ic_bitcoin), null)
+            },
+            title = {
+                Text(stringResource(R.string.title_bitcoin_only))
+            },
+            subtitle = {
+                Text(stringResource(R.string.summary_bitcoin_only))
+            },
+            value = settings?.bitcoinOnly == true,
+            onChange = {
+                viewModel.setBitcoinOnly(it)
+            }
+        )
         SettingsList(
             icon = {
                 Icon(painterResource(R.drawable.ic_outline_timer_24), null)

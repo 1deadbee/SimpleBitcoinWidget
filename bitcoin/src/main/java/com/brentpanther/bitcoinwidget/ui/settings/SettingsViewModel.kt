@@ -3,6 +3,7 @@ package com.brentpanther.bitcoinwidget.ui.settings
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.brentpanther.bitcoinwidget.Coin
 import com.brentpanther.bitcoinwidget.NightMode
 import com.brentpanther.bitcoinwidget.Repository.downloadCustomIcon
 import com.brentpanther.bitcoinwidget.Repository.downloadJSON
@@ -11,6 +12,7 @@ import com.brentpanther.bitcoinwidget.Theme
 import com.brentpanther.bitcoinwidget.WidgetApplication
 import com.brentpanther.bitcoinwidget.WidgetProvider
 import com.brentpanther.bitcoinwidget.WidgetState
+import com.brentpanther.bitcoinwidget.WidgetType
 import com.brentpanther.bitcoinwidget.db.PriceType
 import com.brentpanther.bitcoinwidget.db.Widget
 import com.brentpanther.bitcoinwidget.db.WidgetDao
@@ -41,7 +43,15 @@ class SettingsViewModel : ViewModel(), SettingsActions {
     fun loadData(widgetId: Int) {
         if (widgetCopy != null) return
         viewModelScope.launch(Dispatchers.IO) {
-            val dbWidget = dao.getByWidgetId(widgetId) ?: return@launch
+            var dbWidget = dao.getByWidgetId(widgetId)
+            if (dbWidget == null) {
+                val config = dao.config()
+                if (config.bitcoinOnly) {
+                    createBitcoinWidget(widgetId)
+                    dbWidget = dao.getByWidgetId(widgetId)
+                }
+            }
+            if (dbWidget == null) return@launch
             widgetCopy = dbWidget.copy()
             downloadJSON()
             exchangeData = getExchangeData(widget.coin, widget.coinName())
@@ -50,6 +60,43 @@ class SettingsViewModel : ViewModel(), SettingsActions {
             downloadCustomIcon(widget)
             widgetFlow.tryEmit(widget.copy(lastUpdated = System.currentTimeMillis()))
         }
+    }
+
+    private suspend fun createBitcoinWidget(widgetId: Int) {
+        val widgetType = WidgetApplication.instance.getWidgetType(widgetId)
+        val lastWidget = dao.getAll().lastOrNull()
+        val currency = lastWidget?.currency ?: "USD"
+        downloadJSON()
+        val exchangeData = getExchangeData(Coin.BTC, null)
+        val defaultExchange = Exchange.valueOf(exchangeData.getDefaultExchange(currency))
+        val widget = Widget(
+            id = 0,
+            widgetId = widgetId,
+            widgetType = widgetType,
+            exchange = defaultExchange,
+            coin = Coin.BTC,
+            currency = currency,
+            coinCustomId = null,
+            coinCustomName = null,
+            currencyCustomName = null,
+            showExchangeLabel = lastWidget?.showExchangeLabel == true,
+            showCoinLabel = lastWidget?.showCoinLabel == true,
+            showIcon = lastWidget?.showIcon != false,
+            numDecimals = lastWidget?.numDecimals ?: -1,
+            currencySymbol = lastWidget?.currencySymbol,
+            theme = lastWidget?.theme ?: if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) Theme.MATERIAL else Theme.SOLID,
+            nightMode = lastWidget?.nightMode ?: NightMode.SYSTEM,
+            coinUnit = if (widgetType == WidgetType.VALUE) null else Coin.BTC.getUnits().firstOrNull()?.text,
+            currencyUnit = null,
+            customIcon = null,
+            lastUpdated = 0,
+            showAmountLabel = lastWidget?.showAmountLabel ?: (widgetType == WidgetType.VALUE),
+            amountHeld = if (widgetType == WidgetType.VALUE) 1.0 else null,
+            useInverse = false,
+            priceType = lastWidget?.priceType ?: PriceType.SPOT,
+            state = WidgetState.DRAFT
+        )
+        dao.insert(widget)
     }
 
     fun getCurrencies() = exchangeData?.currencies?.toList() ?: emptyList()
