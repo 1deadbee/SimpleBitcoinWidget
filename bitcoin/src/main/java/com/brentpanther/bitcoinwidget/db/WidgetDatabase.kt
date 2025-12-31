@@ -13,7 +13,7 @@ import com.brentpanther.bitcoinwidget.WidgetApplication
 import java.io.File
 
 @Database(
-    version = 7,
+    version = 8,
     entities = [Widget::class, Configuration::class],
     exportSchema = true,
     autoMigrations = [
@@ -86,6 +86,12 @@ abstract class WidgetDatabase : RoomDatabase() {
             }
         }
 
+        private val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE Widget ADD COLUMN showTwoDigitMode INTEGER NOT NULL DEFAULT 0")
+            }
+        }
+
         @Volatile
         private var INSTANCE: WidgetDatabase? = null
 
@@ -114,6 +120,7 @@ abstract class WidgetDatabase : RoomDatabase() {
                     .addMigrations(MIGRATION_3_4)
                     .addMigrations(MIGRATION_4_5)
                     .addMigrations(MIGRATION_6_7)
+                    .addMigrations(MIGRATION_7_8)
                     .build()
                 INSTANCE = instance
                 instance

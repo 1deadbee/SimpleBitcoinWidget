@@ -20,6 +20,7 @@
     <string name="title_display">Display</string>
     <string name="title_icon">Show icon</string>
     <string name="title_decimals">Number of decimals</string>
+    <string name="title_two_digit_mode">Two-Digit Mode</string>
     <string name="title_units">Denomination</string>
     <string name="title_preview">Preview</string>
     <string name="title_currency_symbol">Currency symbol</string>
@@ -37,6 +38,7 @@
     <string name="summary_units">Show %1$s as %2$s</string>
     <string name="summary_inverse">Show price of %1$s in %2$s</string>
     <string name="summary_decimals_auto">Auto</string>
+    <string name="summary_two_digit_mode">Display only the first two digits (rounded)</string>
 
     <string name="licenses" translatable="false"><![CDATA[
       Licenses:<br/><br/>

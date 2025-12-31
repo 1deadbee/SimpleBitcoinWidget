@@ -41,7 +41,14 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
             updateLabels(it)
         }
         RectF(widgetSize).also {
-            it.bottom *= if (widget.showExchangeLabel || widget.showCoinLabel) .56F else .95F
+            val bottomMultiplier = if (widget.showTwoDigitMode) {
+                .75F
+            } else if (widget.showExchangeLabel || widget.showCoinLabel) {
+                .56F
+            } else {
+                .95F
+            }
+            it.bottom *= bottomMultiplier
             it.right *= if (widget.showIcon) .80F else 1F
             updatePrice(it)
         }
@@ -61,6 +68,22 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
         }
         if (widget.useInverse) {
             adjustedAmount = 1 / adjustedAmount
+        }
+
+        if (widget.showTwoDigitMode) {
+            val priceString = adjustedAmount.toString()
+            val digitsOnly = priceString.replace("[^0-9]".toRegex(), "")
+            
+            return when {
+                digitsOnly.length >= 3 -> {
+                    val firstTwo = digitsOnly.substring(0, 2).toInt()
+                    val thirdDigit = digitsOnly[2].toString().toInt()
+                    val rounded = if (thirdDigit >= 5) firstTwo + 1 else firstTwo
+                    rounded.toString()
+                }
+                digitsOnly.length >= 2 -> digitsOnly.substring(0, 2)
+                else -> digitsOnly
+            }
         }
 
         val nf = getPriceFormat(adjustedAmount)

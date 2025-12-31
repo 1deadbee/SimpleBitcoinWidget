@@ -493,6 +493,23 @@ private fun DisplaySection(
     widget: Widget
 ) {
     SettingsHeader(title = R.string.title_display)
+    if (widget.widgetType == WidgetType.PRICE) {
+        SettingsSwitch(
+            icon = {
+                Icon(painterResource(R.drawable.ic_outline_text_fields_24), null)
+            },
+            title = {
+                Text(stringResource(R.string.title_two_digit_mode))
+            },
+            subtitle = {
+                Text(stringResource(R.string.summary_two_digit_mode))
+            },
+            value = widget.showTwoDigitMode,
+            onChange = {
+                actions.setShowTwoDigitMode(it)
+            }
+        )
+    }
     var numDecimals by remember { mutableFloatStateOf(widget.numDecimals.toFloat()) }
     SettingsSlider(
         icon = {
@@ -587,7 +604,8 @@ fun PriceWidgetPreview() {
         priceType = PriceType.SPOT,
         lastUpdated = 0,
         state = WidgetState.DRAFT,
-        address = null
+        address = null,
+        showTwoDigitMode = false
     )
     MaterialTheme {
         SettingScreenContent(
@@ -633,7 +651,8 @@ fun ValueWidgetPreview() {
         priceType = PriceType.SPOT,
         lastUpdated = 0,
         state = WidgetState.DRAFT,
-        address = null
+        address = null,
+        showTwoDigitMode = false
     )
     MaterialTheme {
         SettingScreenContent(
