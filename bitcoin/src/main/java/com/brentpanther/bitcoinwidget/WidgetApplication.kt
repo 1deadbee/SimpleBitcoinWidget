@@ -19,7 +19,7 @@ class WidgetApplication : Application() {
             return widgetProviders.map { getWidgetIds(it).toList() }.flatten().toIntArray()
         }
 
-    val widgetProviders = listOf(WidgetProvider::class.java, ValueWidgetProvider::class.java)
+    val widgetProviders = listOf(WidgetProvider::class.java, ValueWidgetProvider::class.java, WidgetProvider1x1::class.java, ValueWidgetProvider1x1::class.java)
 
     fun getWidgetType(widgetId: Int): WidgetType {
         val widgetInfo = AppWidgetManager.getInstance(this).getAppWidgetInfo(widgetId)
@@ -27,6 +27,8 @@ class WidgetApplication : Application() {
         return when (widgetInfo.provider.className) {
             WidgetProvider::class.qualifiedName -> WidgetType.PRICE
             ValueWidgetProvider::class.qualifiedName -> WidgetType.VALUE
+            WidgetProvider1x1::class.qualifiedName -> WidgetType.PRICE
+            ValueWidgetProvider1x1::class.qualifiedName -> WidgetType.VALUE
             else -> throw IllegalArgumentException()
         }
     }
