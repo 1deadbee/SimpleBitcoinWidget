@@ -509,6 +509,23 @@ private fun DisplaySection(
                 actions.setShowTwoDigitMode(it)
             }
         )
+        if (widget.showTwoDigitMode) {
+            SettingsSwitch(
+                icon = {
+                    Icon(painterResource(R.drawable.ic_outline_color_lens_24), null)
+                },
+                title = {
+                    Text(stringResource(R.string.title_two_digit_color_indicator))
+                },
+                subtitle = {
+                    Text(stringResource(R.string.summary_two_digit_color_indicator))
+                },
+                value = widget.twoDigitModeColorIndicator,
+                onChange = {
+                    actions.setTwoDigitModeColorIndicator(it)
+                }
+            )
+        }
     }
     var numDecimals by remember { mutableFloatStateOf(widget.numDecimals.toFloat()) }
     SettingsSlider(
@@ -605,7 +622,8 @@ fun PriceWidgetPreview() {
         lastUpdated = 0,
         state = WidgetState.DRAFT,
         address = null,
-        showTwoDigitMode = false
+        showTwoDigitMode = false,
+        twoDigitModeColorIndicator = true
     )
     MaterialTheme {
         SettingScreenContent(
@@ -652,7 +670,8 @@ fun ValueWidgetPreview() {
         lastUpdated = 0,
         state = WidgetState.DRAFT,
         address = null,
-        showTwoDigitMode = false
+        showTwoDigitMode = false,
+        twoDigitModeColorIndicator = true
     )
     MaterialTheme {
         SettingScreenContent(

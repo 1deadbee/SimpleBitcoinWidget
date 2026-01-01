@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 9,
-    "identityHash": "ac987bf84e7c80ec7b2b1d71fd95c3f0",
+    "identityHash": "ac9add0b3a4ceaa9615c47873fb562f0",
     "entities": [
       {
         "tableName": "Widget",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `widgetId` INTEGER NOT NULL, `widgetType` TEXT NOT NULL, `exchange` TEXT NOT NULL, `coin` TEXT NOT NULL, `currency` TEXT NOT NULL, `coinCustomId` TEXT, `coinCustomName` TEXT, `currencyCustomName` TEXT, `showExchangeLabel` INTEGER NOT NULL, `showCoinLabel` INTEGER NOT NULL, `showIcon` INTEGER NOT NULL, `numDecimals` INTEGER NOT NULL, `currencySymbol` TEXT, `theme` TEXT NOT NULL, `nightMode` TEXT NOT NULL, `coinUnit` TEXT, `currencyUnit` TEXT, `customIcon` TEXT, `portraitTextSize` INTEGER, `landscapeTextSize` INTEGER, `lastValue` TEXT, `amountHeld` REAL, `address` TEXT, `showAmountLabel` INTEGER NOT NULL, `useInverse` INTEGER NOT NULL, `priceType` TEXT NOT NULL, `lastUpdated` INTEGER NOT NULL, `state` TEXT NOT NULL, `showTwoDigitMode` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `widgetId` INTEGER NOT NULL, `widgetType` TEXT NOT NULL, `exchange` TEXT NOT NULL, `coin` TEXT NOT NULL, `currency` TEXT NOT NULL, `coinCustomId` TEXT, `coinCustomName` TEXT, `currencyCustomName` TEXT, `showExchangeLabel` INTEGER NOT NULL, `showCoinLabel` INTEGER NOT NULL, `showIcon` INTEGER NOT NULL, `numDecimals` INTEGER NOT NULL, `currencySymbol` TEXT, `theme` TEXT NOT NULL, `nightMode` TEXT NOT NULL, `coinUnit` TEXT, `currencyUnit` TEXT, `customIcon` TEXT, `portraitTextSize` INTEGER, `landscapeTextSize` INTEGER, `lastValue` TEXT, `amountHeld` REAL, `address` TEXT, `showAmountLabel` INTEGER NOT NULL, `useInverse` INTEGER NOT NULL, `priceType` TEXT NOT NULL, `lastUpdated` INTEGER NOT NULL, `state` TEXT NOT NULL, `showTwoDigitMode` INTEGER NOT NULL, `twoDigitModeColorIndicator` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
@@ -175,6 +175,12 @@
             "columnName": "showTwoDigitMode",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "twoDigitModeColorIndicator",
+            "columnName": "twoDigitModeColorIndicator",
+            "affinity": "INTEGER",
+            "notNull": true
           }
         ],
         "primaryKey": {
@@ -240,7 +246,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ac987bf84e7c80ec7b2b1d71fd95c3f0')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ac9add0b3a4ceaa9615c47873fb562f0')"
     ]
   }
 }

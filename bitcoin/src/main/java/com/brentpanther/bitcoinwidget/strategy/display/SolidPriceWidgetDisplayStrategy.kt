@@ -150,7 +150,7 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
             }
         }
         
-        if (widget.showTwoDigitMode && twoDigitRoundingDirection != RoundingDirection.NONE) {
+        if (widget.showTwoDigitMode && widget.twoDigitModeColorIndicator && twoDigitRoundingDirection != RoundingDirection.NONE) {
             applyTwoDigitModeColor()
         }
         

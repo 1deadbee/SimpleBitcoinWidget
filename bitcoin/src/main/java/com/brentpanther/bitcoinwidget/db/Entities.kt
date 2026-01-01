@@ -41,7 +41,8 @@ data class Widget(
     var priceType: PriceType,
     var lastUpdated: Long,
     var state: WidgetState,
-    var showTwoDigitMode: Boolean = false
+    var showTwoDigitMode: Boolean = false,
+    var twoDigitModeColorIndicator: Boolean = true
 ) {
 
     fun coinName() = if (coinCustomId != null) coinCustomName ?: coin.coinName else coin.coinName

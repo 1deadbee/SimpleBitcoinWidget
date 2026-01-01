@@ -227,6 +227,10 @@ class SettingsViewModel : ViewModel(), SettingsActions {
         widget.showTwoDigitMode = isEnabled
     }
 
+    override fun setTwoDigitModeColorIndicator(isEnabled: Boolean) = emit {
+        widget.twoDigitModeColorIndicator = isEnabled
+    }
+
     fun save() = viewModelScope.launch(Dispatchers.IO) {
         if (widget.state == WidgetState.DRAFT) {
             widget.state = WidgetState.CURRENT
@@ -256,4 +260,5 @@ interface SettingsActions {
     fun setShowExchangeLabel(isShown: Boolean) {}
     fun setPriceType(type: PriceType) {}
     fun setShowTwoDigitMode(isEnabled: Boolean) {}
+    fun setTwoDigitModeColorIndicator(isEnabled: Boolean) {}
 }

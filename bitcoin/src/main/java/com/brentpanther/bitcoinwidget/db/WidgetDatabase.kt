@@ -94,6 +94,7 @@ abstract class WidgetDatabase : RoomDatabase() {
 
         private val MIGRATION_8_9 = object : Migration(8, 9) {
             override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE Widget ADD COLUMN twoDigitModeColorIndicator INTEGER NOT NULL DEFAULT 1")
                 db.execSQL("ALTER TABLE Configuration ADD COLUMN bitcoinOnly INTEGER NOT NULL DEFAULT 0")
             }
         }
