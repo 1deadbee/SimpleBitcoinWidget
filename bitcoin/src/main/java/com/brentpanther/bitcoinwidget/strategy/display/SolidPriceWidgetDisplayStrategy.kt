@@ -2,6 +2,7 @@ package com.brentpanther.bitcoinwidget.strategy.display
 
 import android.content.Context
 import android.content.res.Configuration
+import android.graphics.Color
 import android.graphics.RectF
 import android.os.Build
 import android.util.Log
@@ -21,6 +22,8 @@ import kotlin.math.pow
 
 open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, widgetPresenter: WidgetPresenter) :
     PriceWidgetDisplayStrategy(context, widget, widgetPresenter) {
+
+    private var twoDigitRoundingDirection: RoundingDirection = RoundingDirection.NONE
 
     override fun refresh() {
         val widgetSize = widgetPresenter.getWidgetSize(appContext, widget.widgetId)
@@ -57,6 +60,7 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
 
     private fun formatPriceString(amount: String?): String {
         if (amount.isNullOrEmpty()) return ""
+        twoDigitRoundingDirection = RoundingDirection.NONE
         var adjustedAmount = amount.toDouble()
         widget.coinUnit?.let {
             adjustedAmount *= widget.coin.getUnitAmount(it)
@@ -78,8 +82,13 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
                 digitsOnly.length >= 3 -> {
                     val firstTwo = digitsOnly.substring(0, 2).toInt()
                     val thirdDigit = digitsOnly[2].toString().toInt()
-                    val rounded = if (thirdDigit >= 5) firstTwo + 1 else firstTwo
-                    rounded.toString()
+                    if (thirdDigit >= 5) {
+                        twoDigitRoundingDirection = RoundingDirection.UP
+                        (firstTwo + 1).toString()
+                    } else {
+                        twoDigitRoundingDirection = RoundingDirection.DOWN
+                        firstTwo.toString()
+                    }
                 }
                 digitsOnly.length >= 2 -> digitsOnly.substring(0, 2)
                 else -> digitsOnly
@@ -140,6 +149,11 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
                 widget.lastValue ?: ""
             }
         }
+        
+        if (widget.showTwoDigitMode && twoDigitRoundingDirection != RoundingDirection.NONE) {
+            applyTwoDigitModeColor()
+        }
+        
         val config = getConfig()
         val adjustSize = config.consistentSize || Build.VERSION.SDK_INT < Build.VERSION_CODES.O
         if (adjustSize) {
@@ -159,6 +173,52 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
         }
     }
 
+    private fun applyTwoDigitModeColor() {
+        val isDark = widget.nightMode.isDark(appContext)
+        val isTransparent = widget.theme == Theme.TRANSPARENT || widget.theme == Theme.TRANSPARENT_MATERIAL
+        
+        val adjustedColor = when {
+            isTransparent && isDark -> {
+                when (twoDigitRoundingDirection) {
+                    RoundingDirection.DOWN -> Color.parseColor("#ffffff")
+                    RoundingDirection.UP -> Color.parseColor("#bbbbbb")
+                    else -> Color.parseColor("#ffffff")
+                }
+            }
+            isTransparent && !isDark -> {
+                when (twoDigitRoundingDirection) {
+                    RoundingDirection.DOWN -> Color.parseColor("#ffffff")
+                    RoundingDirection.UP -> Color.parseColor("#cccccc")
+                    else -> Color.parseColor("#ffffff")
+                }
+            }
+            isDark -> {
+                when (twoDigitRoundingDirection) {
+                    RoundingDirection.DOWN -> Color.parseColor("#dddddd")
+                    RoundingDirection.UP -> Color.parseColor("#999999")
+                    else -> Color.parseColor("#bbbbbb")
+                }
+            }
+            else -> {
+                when (twoDigitRoundingDirection) {
+                    RoundingDirection.DOWN -> Color.parseColor("#000000")
+                    RoundingDirection.UP -> Color.parseColor("#555555")
+                    else -> Color.parseColor("#222222")
+                }
+            }
+        }
+        
+        widgetPresenter.setTextColor(R.id.price, adjustedColor)
+        widgetPresenter.setTextColor(R.id.priceAutoSize, adjustedColor)
+    }
+
+    private fun adjustColorBrightness(color: Int, factor: Float): Int {
+        val r = (Color.red(color) * factor).toInt().coerceIn(0, 255)
+        val g = (Color.green(color) * factor).toInt().coerceIn(0, 255)
+        val b = (Color.blue(color) * factor).toInt().coerceIn(0, 255)
+        return Color.rgb(r, g, b)
+    }
+
     private fun adjustPriceTextSize(config: ConfigurationWithSizes, view: TextView, rectF: RectF) {
         val priceSize = TextViewAutoSizeHelper.findLargestTextSizeWhichFits(view, rectF)
         val isPortrait = appContext.resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT
@@ -175,6 +235,10 @@ open class SolidPriceWidgetDisplayStrategy(context: Context, widget: Widget, wid
 
     companion object {
         private val TAG = SolidPriceWidgetDisplayStrategy::class.java.simpleName
+    }
+
+    private enum class RoundingDirection {
+        NONE, UP, DOWN
     }
 
 }
