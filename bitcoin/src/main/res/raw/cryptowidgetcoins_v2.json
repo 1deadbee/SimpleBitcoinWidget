@@ -66,235 +66,175 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "BIBOX",
       "coins": [
         {
           "name": "1INCH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AAVE",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
         },
         {
           "name": "ADA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ALGO",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "APE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "APT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ARB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AVAX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AXS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAT",
           "ccy": [
             "ETH",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BCH",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
         },
         {
           "name": "BNB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BSV",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTM",
           "ccy": [
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "BTT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CHZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "COMP",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "CORE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRV",
           "ccy": [
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "DAI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DASH",
           "ccy": [
             "BTC",
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "DOGE",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "DOT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DYDX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "EGLD",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "EOS",
           "ccy": [
             "BTC",
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "ETC",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
@@ -302,269 +242,197 @@
         {
           "name": "ETH",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "FIL",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "FTT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GALA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GNO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GRIN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GRT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "HBAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ID",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IOTA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KNC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KSM",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LINK",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "LRC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LTC",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "LUNA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LUNC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MANA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MATIC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MKR",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "MLN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEO",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "NEXO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OMG",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ONT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "OP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QNT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QTUM",
           "ccy": [
             "ETH",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "REN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "REP",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "RVN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SHIB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SNX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUSHI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "TRX",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
@@ -572,21 +440,16 @@
         {
           "name": "UMA",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "UNI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "VET",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "WBTC",
@@ -596,70 +459,49 @@
         },
         {
           "name": "XEM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XLM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XMR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XRP",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "XTZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XYM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "YFI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZEC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZIL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": []
     },
     {
@@ -880,12 +722,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "BINANCE",
@@ -2276,493 +2114,355 @@
       "coins": [
         {
           "name": "1INCH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AAVE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ADA",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "ALGO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "APE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "APT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ARB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ASTR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "AVAX",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "AXS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BCH",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BNB",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BNT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTC",
           "ccy": [
-            "USD",
             "DAI"
           ]
         },
         {
           "name": "CHZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "COMP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRV",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DAI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DASH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOGE",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "DOT",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "EGLD",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "EOS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ETC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ETH",
           "ccy": [
-            "USD",
             "BTC",
             "DAI"
           ]
         },
         {
           "name": "FET",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FIL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GALA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GRT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "HBAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ICX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IOTA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KAVA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KNC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KSM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LINK",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "LRC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "LSK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LTC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "LTO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MANA",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "MATIC",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "MKR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OMG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ONT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PAXG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QNT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QTUM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "REN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RENDER",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RVN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "S",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SHIB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SNX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "STG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STORJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUSHI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "THETA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "TRX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "UNI",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "VET",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "WAVES",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "WBTC",
@@ -2772,52 +2472,38 @@
         },
         {
           "name": "XLM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XRP",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "XTZ",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "YFI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZEC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZIL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "IOTA": "IOT"
       },
@@ -3297,12 +2983,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "BIT2C",
@@ -3862,9 +3544,7 @@
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTT",
@@ -3893,8 +3573,7 @@
         {
           "name": "DOGE",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -3926,8 +3605,7 @@
         {
           "name": "ETH",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -4032,9 +3710,7 @@
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "POWR",
@@ -4075,8 +3751,7 @@
         {
           "name": "SOL",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -4090,8 +3765,7 @@
         {
           "name": "SUI",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -4105,8 +3779,7 @@
         {
           "name": "TRX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -4132,8 +3805,7 @@
         {
           "name": "XRP",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -4153,9 +3825,7 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": [
         "KRW"
       ]
@@ -4585,12 +4255,8 @@
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "BITPANDA",
@@ -5283,15 +4949,12 @@
       "coins": [
         {
           "name": "1INCH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AAVE",
           "ccy": [
             "XRP",
-            "USD",
             "BTC"
           ]
         },
@@ -5299,90 +4962,72 @@
           "name": "ADA",
           "ccy": [
             "XRP",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ALGO",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "APE",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "APT",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "ARB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ASTR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
           "ccy": [
             "BTC",
             "SOL",
-            "ADA",
-            "USD"
+            "ADA"
           ]
         },
         {
           "name": "AVA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AVAX",
           "ccy": [
             "SOL",
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "AXS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAT",
           "ccy": [
             "BTC",
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "BCH",
           "ccy": [
-            "USD",
             "BTC",
             "SOL",
             "XRP",
@@ -5393,79 +5038,61 @@
           "name": "BNB",
           "ccy": [
             "ADA",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BNT",
           "ccy": [
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "BONK",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "BSV",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CHZ",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "COMP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CORE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRV",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "DAI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DASH",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
@@ -5474,14 +5101,12 @@
             "BTC",
             "SOL",
             "ADA",
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "DOT",
           "ccy": [
-            "USD",
             "XRP",
             "SOL",
             "BTC"
@@ -5489,35 +5114,28 @@
         },
         {
           "name": "DYDX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "EGLD",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENJ",
           "ccy": [
             "XRP",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ENS",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "ETC",
           "ccy": [
-            "USD",
             "BTC",
             "ETH",
             "XRP"
@@ -5526,133 +5144,103 @@
         {
           "name": "ETH",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "FET",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "FIL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FLR",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "FTT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GALA",
           "ccy": [
-            "USD",
             "XRP",
             "BTC"
           ]
         },
         {
           "name": "GNO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GRT",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "HBAR",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "ICX",
           "ccy": [
-            "USD",
             "BTC",
             "XRP"
           ]
         },
         {
           "name": "ID",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "INJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IOTA",
           "ccy": [
             "BTC",
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "KAS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KAVA",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "KNC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KSM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LINK",
           "ccy": [
-            "USD",
             "XRP",
             "ETH",
             "BTC"
@@ -5661,226 +5249,173 @@
         {
           "name": "LRC",
           "ccy": [
-            "USD",
             "BTC",
             "XRP"
           ]
         },
         {
           "name": "LSK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LTC",
           "ccy": [
             "XRP",
             "ETH",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "LUNA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LUNC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MANA",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "MATIC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MLN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEO",
           "ccy": [
             "XRP",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "NEXO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OKB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OMG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OP",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "PAXG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PEPE",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "POWR",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "QNT",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "RENDER",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RPL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RUNE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RVN",
           "ccy": [
             "BTC",
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "S",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
           "ccy": [
-            "USD",
             "XRP"
           ]
         },
         {
           "name": "SHIB",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "SNX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
           "ccy": [
             "XRP",
-            "USD",
             "ADA"
           ]
         },
         {
           "name": "SOLO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STORJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUI",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "SUSHI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "THETA",
           "ccy": [
             "XRP",
-            "USD",
             "SOL"
           ]
         },
         {
           "name": "TRX",
           "ccy": [
-            "USD",
             "BTC",
             "ADA",
             "XRP",
@@ -5889,15 +5424,12 @@
         },
         {
           "name": "UMA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "UNI",
           "ccy": [
             "XRP",
-            "USD",
             "BTC"
           ]
         },
@@ -5906,15 +5438,12 @@
           "ccy": [
             "XRP",
             "ETH",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "WAVES",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "WBTC",
@@ -5924,34 +5453,26 @@
         },
         {
           "name": "XAUT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XEM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XLM",
           "ccy": [
             "XRP",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "XMR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XRP",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
@@ -5960,21 +5481,17 @@
           "name": "XTZ",
           "ccy": [
             "XRP",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "YFI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZIL",
           "ccy": [
             "BTC",
-            "USD",
             "ETH",
             "XRP"
           ]
@@ -5983,14 +5500,11 @@
           "name": "ZRX",
           "ccy": [
             "XRP",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "IOTA": "IOT",
         "BCH": "BAB",
@@ -6763,9 +6277,7 @@
         },
         {
           "name": "ADA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ALGO",
@@ -6829,9 +6341,7 @@
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTT",
@@ -6863,9 +6373,7 @@
         },
         {
           "name": "DOGE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOT",
@@ -6893,9 +6401,7 @@
         },
         {
           "name": "ETH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FET",
@@ -7019,9 +6525,7 @@
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "POWR",
@@ -7069,9 +6573,7 @@
         },
         {
           "name": "SOL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STORJ",
@@ -7079,9 +6581,7 @@
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUSHI",
@@ -7113,9 +6613,7 @@
         },
         {
           "name": "XRP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XTZ",
@@ -7138,9 +6636,7 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDC"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "IOTA": "MIOTA"
       },
@@ -7586,12 +7082,9 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": [
-        "TRY",
-        "USD"
+        "TRY"
       ]
     },
     {
@@ -8002,16 +7495,12 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "BCH": "BAB",
         "XLM": "STR"
       },
-      "all": [
-        "USD"
-      ]
+      "all": []
     },
     {
       "name": "CEXIO",
@@ -11805,9 +11294,7 @@
       "coins": [
         {
           "name": "AAVE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ARB",
@@ -11819,9 +11306,7 @@
         },
         {
           "name": "BCH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BNB",
@@ -11829,27 +11314,19 @@
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOGE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ETH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GALA",
@@ -11869,21 +11346,15 @@
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SHIB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOLO",
@@ -11895,15 +11366,11 @@
         },
         {
           "name": "TRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "UNI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XAUT",
@@ -11915,14 +11382,10 @@
         },
         {
           "name": "XRP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": [
         "PHP"
       ]
@@ -12642,543 +12105,378 @@
       "coins": [
         {
           "name": "1INCH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AAVE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ADA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ALGO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "APE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "APT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ARB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "AVAX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AXS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BCH",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BNB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BNT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BSV",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CHZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "COMP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CORE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRV",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DAI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DASH",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "DCR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOGE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DYDX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "EGLD",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ETC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ETH",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "FET",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FIL",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "FLR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GALA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GNO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GRT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "HBAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "INJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IOTA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KAS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KAVA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KNC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KSM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LEO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LINK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LRC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LSK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LTC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "LUNA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MANA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MATIC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "MKR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEAR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEO",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "NEXO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "OMG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ONT",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "OP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PAXG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QTUM",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "RENDER",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RPL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RVN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "S",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SHIB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SNX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STORJ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUSHI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "THETA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "TRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "UMA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "UNI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "VET",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "WAVES",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "WBTC",
@@ -13188,66 +12486,49 @@
         },
         {
           "name": "XAUT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XLM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XRP",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "XTZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XVG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "YFI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZEC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ZIL",
           "ccy": [
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "ZRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": []
     },
     {
@@ -13299,44 +12580,35 @@
       "coins": [
         {
           "name": "AAVE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ADA",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ALGO",
           "ccy": [
             "BTC",
-            "EUR",
-            "USD"
+            "EUR"
           ]
         },
         {
           "name": "ARB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
           "ccy": [
             "BTC",
-            "EUR",
-            "USD"
+            "EUR"
           ]
         },
         {
           "name": "AXS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BCH",
@@ -13344,8 +12616,7 @@
             "BTC",
             "ETH",
             "EUR",
-            "UAH",
-            "USD"
+            "UAH"
           ]
         },
         {
@@ -13355,22 +12626,18 @@
             "EUR",
             "GBP",
             "PLN",
-            "UAH",
-            "USD"
+            "UAH"
           ]
         },
         {
           "name": "CHZ",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "CRV",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DASH",
@@ -13382,22 +12649,19 @@
           "name": "DOGE",
           "ccy": [
             "BTC",
-            "EUR",
-            "USD"
+            "EUR"
           ]
         },
         {
           "name": "DOT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ETC",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -13409,154 +12673,120 @@
             "GBP",
             "LTC",
             "PLN",
-            "UAH",
-            "USD"
+            "UAH"
           ]
         },
         {
           "name": "GRT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KAS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LINK",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "LTC",
           "ccy": [
             "BTC",
-            "EUR",
-            "USD"
+            "EUR"
           ]
         },
         {
           "name": "MANA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEAR",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "NEO",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "OP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QTUM",
           "ccy": [
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "RENDER",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SHIB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "SUI",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "TRX",
           "ccy": [
             "BTC",
-            "EUR",
-            "USD"
+            "EUR"
           ]
         },
         {
           "name": "UNI",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "WAVES",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "XAUT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XLM",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -13566,42 +12796,34 @@
             "ETH",
             "EUR",
             "GBP",
-            "UAH",
-            "USD"
+            "UAH"
           ]
         },
         {
           "name": "XTZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "YFI",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ZEC",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ZRX",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": []
     },
     {
@@ -13727,7 +12949,6 @@
         "MXN",
         "PEN",
         "PYG",
-        "USD",
         "UYU",
         "VES"
       ]
@@ -13785,9 +13006,7 @@
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CHZ",
@@ -13815,9 +13034,7 @@
         },
         {
           "name": "ETH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FET",
@@ -13964,9 +13181,7 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": [
         "BRL"
       ]
@@ -14502,12 +13717,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "GEMINI",
@@ -14796,283 +14007,235 @@
         {
           "name": "1INCH",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "AAVE",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ADA",
           "ccy": [
             "ETH",
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ALGO",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "APE",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "APT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ARB",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ARRR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ASTR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "AVA",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "AVAX",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "AXS",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BAL",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BAND",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BAT",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BCH",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BNB",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "BNT",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BSV",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTG",
           "ccy": [
             "BTC",
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "BTT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CEL",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "CHZ",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "COMP",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "CORE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRV",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "DASH",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "DCR",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "DOT",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "DYDX",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "EGLD",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ENJ",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ENS",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ETC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ETH",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "FET",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "FIL",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
@@ -15080,28 +14243,23 @@
           "name": "FIRO",
           "ccy": [
             "BTC",
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "FLR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FTT",
           "ccy": [
             "ETH",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "GALA",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
@@ -15116,29 +14274,25 @@
           "name": "GRIN",
           "ccy": [
             "ETH",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "GRT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "HBAR",
           "ccy": [
             "ETH",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "HT",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
@@ -15146,48 +14300,39 @@
           "name": "ICX",
           "ccy": [
             "ETH",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ID",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "INJ",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "IOTA",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "KAS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KAVA",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
@@ -15195,7 +14340,6 @@
           "name": "KMD",
           "ccy": [
             "ETH",
-            "USD",
             "BTC"
           ]
         },
@@ -15203,27 +14347,22 @@
           "name": "KNC",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "KSM",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LEO",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
@@ -15231,29 +14370,24 @@
           "name": "LINK",
           "ccy": [
             "BTC",
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "LRC",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
         },
         {
           "name": "LSK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LTC",
           "ccy": [
             "ETH",
-            "USD",
             "BTC",
             "DAI"
           ]
@@ -15262,21 +14396,18 @@
           "name": "LUNA",
           "ccy": [
             "BTC",
-            "USD",
             "ETH"
           ]
         },
         {
           "name": "LUNC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "MANA",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
@@ -15291,7 +14422,6 @@
         {
           "name": "NEAR",
           "ccy": [
-            "USD",
             "ETH",
             "BTC"
           ]
@@ -15300,7 +14430,6 @@
           "name": "NEO",
           "ccy": [
             "BTC",
-            "USD",
             "ETH",
             "DAI"
           ]
@@ -15309,50 +14438,42 @@
           "name": "NEXO",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "OKB",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "OMG",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ONT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "OP",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "PAXG",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "POWR",
@@ -15363,136 +14484,110 @@
         {
           "name": "QNT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "QTUM",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "REN",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RENDER",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "REP",
           "ccy": [
             "ETH",
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "RPL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "RUNE",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "RVN",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "S",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "SHIB",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "SNX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "SOL",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "SOLO",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "STG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STORJ",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUSHI",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "THETA",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "TRX",
           "ccy": [
-            "USD",
             "BTC",
             "ETH"
           ]
@@ -15500,117 +14595,97 @@
         {
           "name": "UMA",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "UNI",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "VET",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "WAVES",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "WBTC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "XAUT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XEM",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "XLM",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "XMR",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "XRP",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "XTZ",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "XVG",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "XYM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "YFI",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ZEC",
           "ccy": [
-            "USD",
             "BTC"
           ]
         },
         {
           "name": "ZRX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "XLM": "STR",
         "IOTA": "IOT"
@@ -16044,17 +15119,13 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "BCH": "BAB",
         "XLM": "STR",
         "IOTA": "IOT"
       },
-      "all": [
-        "USD"
-      ]
+      "all": []
     },
     {
       "name": "INDEPENDENT_RESERVE",
@@ -16295,9 +15366,7 @@
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BSV",
@@ -16308,15 +15377,12 @@
         {
           "name": "BTC",
           "ccy": [
-            "IDR",
-            "USD"
+            "IDR"
           ]
         },
         {
           "name": "BTT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CEL",
@@ -16399,8 +15465,7 @@
         {
           "name": "ETH",
           "ccy": [
-            "IDR",
-            "USD"
+            "IDR"
           ]
         },
         {
@@ -16514,8 +15579,7 @@
         {
           "name": "LUNC",
           "ccy": [
-            "IDR",
-            "USD"
+            "IDR"
           ]
         },
         {
@@ -16581,8 +15645,7 @@
         {
           "name": "PEPE",
           "ccy": [
-            "IDR",
-            "USD"
+            "IDR"
           ]
         },
         {
@@ -16636,8 +15699,7 @@
         {
           "name": "SHIB",
           "ccy": [
-            "IDR",
-            "USD"
+            "IDR"
           ]
         },
         {
@@ -16767,9 +15829,7 @@
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": []
     },
     {
@@ -18319,15 +17379,11 @@
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "BSV": "BCHSV"
       },
-      "all": [
-        "USD"
-      ]
+      "all": []
     },
     {
       "name": "LBANK",
@@ -18822,14 +17878,12 @@
         {
           "name": "AVAX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BCH",
           "ccy": [
-            "USD",
             "SGD",
             "JPY",
             "BTC"
@@ -18843,22 +17897,19 @@
             "AUD",
             "EUR",
             "SGD",
-            "USD",
             "DAI"
           ]
         },
         {
           "name": "COMP",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "EGLD",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
@@ -18870,14 +17921,12 @@
             "JPY",
             "BTC",
             "DAI",
-            "HKD",
-            "USD"
+            "HKD"
           ]
         },
         {
           "name": "FTT",
           "ccy": [
-            "USD",
             "BTC",
             "JPY"
           ]
@@ -18904,39 +17953,33 @@
         {
           "name": "SAND",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "SOL",
           "ccy": [
             "BTC",
-            "USD",
             "JPY"
           ]
         },
         {
           "name": "SOLO",
           "ccy": [
-            "XRP",
-            "USD"
+            "XRP"
           ]
         },
         {
           "name": "XRP",
           "ccy": [
             "JPY",
-            "USD",
             "EUR",
             "SGD",
             "BTC"
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "IOTA": "MIOTA"
       },
@@ -19014,7 +18057,6 @@
             "MYR",
             "NGN",
             "UGX",
-            "USD",
             "ZAR"
           ]
         },
@@ -19054,7 +18096,6 @@
             "KES",
             "MYR",
             "NGN",
-            "USD",
             "BTC",
             "ZAR"
           ]
@@ -19078,7 +18119,6 @@
           "name": "INJ",
           "ccy": [
             "NGN",
-            "USD",
             "ZAR"
           ]
         },
@@ -19110,9 +18150,7 @@
         },
         {
           "name": "PAXG",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
@@ -19140,7 +18178,6 @@
             "MYR",
             "NGN",
             "UGX",
-            "USD",
             "BTC",
             "XRP",
             "ZAR"
@@ -19176,14 +18213,12 @@
           "ccy": [
             "MYR",
             "NGN",
-            "USD",
             "BTC",
             "ZAR"
           ]
         }
       ],
       "ccy_ovr": {
-        "USD": "USDT",
         "BTC": "XBT"
       },
       "c_ovr": {
@@ -20046,17 +19081,13 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "XLM": "STR",
         "IOTA": "IOT",
         "BCH": "BAB"
       },
-      "all": [
-        "USD"
-      ]
+      "all": []
     },
     {
       "name": "NDAX",
@@ -20234,7 +19265,6 @@
             "EUR",
             "CRV",
             "HBAR",
-            "USD",
             "LDO",
             "TRX",
             "BCH",
@@ -20295,7 +19325,6 @@
             "DOT",
             "OP",
             "ARB",
-            "USD",
             "MANA",
             "ATOM",
             "APE",
@@ -20371,7 +19400,6 @@
             "GRT",
             "FET",
             "YFI",
-            "USD",
             "OP",
             "GALA",
             "SAND",
@@ -20416,7 +19444,6 @@
             "CRV",
             "ETC",
             "UNI",
-            "USD",
             "ALGO",
             "AXS",
             "XRP",
@@ -20465,7 +19492,6 @@
           "name": "APT",
           "ccy": [
             "BTC",
-            "USD",
             "1INCH",
             "TRX",
             "YFI",
@@ -20530,7 +19556,6 @@
             "ZRX",
             "PEPE",
             "XTZ",
-            "USD",
             "BNB",
             "XLM",
             "ALGO",
@@ -20599,7 +19624,6 @@
             "AXS",
             "SOL",
             "BAT",
-            "USD",
             "PAXG",
             "HBAR",
             "NEXO",
@@ -20645,7 +19669,6 @@
         {
           "name": "AXS",
           "ccy": [
-            "USD",
             "BAT",
             "LRC",
             "FET",
@@ -20714,7 +19737,6 @@
             "BONK",
             "ENS",
             "WBTC",
-            "USD",
             "SOL",
             "MANA",
             "NEXO",
@@ -20781,7 +19803,6 @@
             "YFI",
             "ETH",
             "UNI",
-            "USD",
             "ATOM",
             "XRP",
             "LDO",
@@ -20843,7 +19864,6 @@
             "LRC",
             "LTC",
             "SHIB",
-            "USD",
             "GRT",
             "OP",
             "BTC",
@@ -20885,7 +19905,6 @@
             "LDO",
             "EUR",
             "MANA",
-            "USD",
             "YFI",
             "GALA",
             "ADA",
@@ -20938,7 +19957,6 @@
         {
           "name": "BTC",
           "ccy": [
-            "USD",
             "DAI",
             "COMP",
             "ETH",
@@ -21002,7 +20020,6 @@
             "EUR",
             "BCH",
             "ZRX",
-            "USD",
             "ALGO",
             "XTZ",
             "ETC",
@@ -21061,7 +20078,6 @@
             "NEXO",
             "SHIB",
             "ETC",
-            "USD",
             "GALA",
             "IMX",
             "ALGO",
@@ -21135,7 +20151,6 @@
             "BAT",
             "ATOM",
             "SHIB",
-            "USD",
             "NEXO",
             "GRT",
             "QNT",
@@ -21181,7 +20196,6 @@
             "ETH",
             "ZRX",
             "SHIB",
-            "USD",
             "LINK",
             "SAND",
             "UNI",
@@ -21231,7 +20245,6 @@
             "HBAR",
             "NEXO",
             "MANA",
-            "USD",
             "FET",
             "UNI",
             "CRV",
@@ -21288,7 +20301,6 @@
           "ccy": [
             "MANA",
             "1INCH",
-            "USD",
             "BONK",
             "SAND",
             "NEXO",
@@ -21346,7 +20358,6 @@
           "ccy": [
             "YFI",
             "GRT",
-            "USD",
             "XLM",
             "ETH",
             "LRC",
@@ -21410,7 +20421,6 @@
             "APT",
             "SNX",
             "BAT",
-            "USD",
             "PAXG",
             "TRX",
             "LTC",
@@ -21463,7 +20473,6 @@
           "name": "ETC",
           "ccy": [
             "LDO",
-            "USD",
             "AAVE",
             "LTC",
             "XLM",
@@ -21544,7 +20553,6 @@
             "AXS",
             "ZRX",
             "ARB",
-            "USD",
             "PAXG",
             "WBTC",
             "LTC",
@@ -21590,7 +20598,6 @@
             "AAVE",
             "ETC",
             "LRC",
-            "USD",
             "ADA",
             "SOL",
             "EUR",
@@ -21639,7 +20646,6 @@
           "ccy": [
             "1INCH",
             "CRV",
-            "USD",
             "ETH",
             "GRT",
             "IMX",
@@ -21703,7 +20709,6 @@
             "IMX",
             "BAT",
             "YFI",
-            "USD",
             "UNI",
             "NEXO",
             "FET",
@@ -21767,7 +20772,6 @@
             "LDO",
             "ALGO",
             "LINK",
-            "USD",
             "DOT",
             "BONK",
             "ETH",
@@ -21814,7 +20818,6 @@
         {
           "name": "IMX",
           "ccy": [
-            "USD",
             "GRT",
             "LTC",
             "XLM",
@@ -21897,7 +20900,6 @@
             "SOL",
             "QNT",
             "DOT",
-            "USD",
             "WBTC",
             "ALGO",
             "XRP",
@@ -21955,7 +20957,6 @@
             "XRP",
             "LRC",
             "AAVE",
-            "USD",
             "GALA",
             "DAI",
             "EUR",
@@ -21991,7 +20992,6 @@
         {
           "name": "LINK",
           "ccy": [
-            "USD",
             "1INCH",
             "ADA",
             "ETC",
@@ -22073,7 +21073,6 @@
             "DOGE",
             "ALGO",
             "ARB",
-            "USD",
             "UNI",
             "XMR",
             "SAND",
@@ -22109,7 +21108,6 @@
         {
           "name": "LTC",
           "ccy": [
-            "USD",
             "AAVE",
             "PEPE",
             "UNI",
@@ -22172,7 +21170,6 @@
             "DASH",
             "APT",
             "PAXG",
-            "USD",
             "FET",
             "BAT",
             "GRT",
@@ -22238,7 +21235,6 @@
             "AAVE",
             "BONK",
             "SOL",
-            "USD",
             "ALGO",
             "PEPE",
             "XLM",
@@ -22298,7 +21294,6 @@
             "BTC",
             "YFI",
             "QNT",
-            "USD",
             "AXS",
             "ZRX",
             "PAXG",
@@ -22366,7 +21361,6 @@
             "FET",
             "YFI",
             "HBAR",
-            "USD",
             "XRP",
             "KAVA",
             "BCH",
@@ -22431,7 +21425,6 @@
             "QNT",
             "IMX",
             "ZRX",
-            "USD",
             "SHIB",
             "DAI",
             "WBTC",
@@ -22469,7 +21462,6 @@
         {
           "name": "QNT",
           "ccy": [
-            "USD",
             "BTC",
             "BAT",
             "UNI",
@@ -22534,7 +21526,6 @@
             "XRP",
             "YFI",
             "BCH",
-            "USD",
             "SNX",
             "APT",
             "OP",
@@ -22588,7 +21579,6 @@
             "IMX",
             "DASH",
             "AXS",
-            "USD",
             "PAXG",
             "ARB",
             "HBAR",
@@ -22647,7 +21637,6 @@
             "XTZ",
             "BTC",
             "ZRX",
-            "USD",
             "ETH",
             "WBTC",
             "BAT",
@@ -22723,7 +21712,6 @@
             "KAVA",
             "AXS",
             "LRC",
-            "USD",
             "SHIB",
             "PAXG",
             "GRT",
@@ -22758,7 +21746,6 @@
             "OP",
             "ALGO",
             "SHIB",
-            "USD",
             "1INCH",
             "SOL",
             "PAXG",
@@ -22834,7 +21821,6 @@
             "ADA",
             "SAND",
             "DAI",
-            "USD",
             "ETH",
             "ENS",
             "GRT",
@@ -22878,7 +21864,6 @@
             "CRV",
             "ENS",
             "MANA",
-            "USD",
             "NEXO",
             "YFI",
             "SNX",
@@ -22943,7 +21928,6 @@
             "DASH",
             "BTC",
             "PEPE",
-            "USD",
             "ATOM",
             "BAT",
             "BCH",
@@ -22991,7 +21975,6 @@
         {
           "name": "XMR",
           "ccy": [
-            "USD",
             "ADA",
             "MKR",
             "PAXG",
@@ -23048,7 +22031,6 @@
           "ccy": [
             "AXS",
             "GALA",
-            "USD",
             "XLM",
             "ZRX",
             "BNB",
@@ -23122,7 +22104,6 @@
             "DAI",
             "ETH",
             "DOT",
-            "USD",
             "LTC",
             "BCH",
             "COMP",
@@ -23165,7 +22146,6 @@
           "name": "YFI",
           "ccy": [
             "DOGE",
-            "USD",
             "DASH",
             "XMR",
             "AAVE",
@@ -23230,7 +22210,6 @@
             "AAVE",
             "LRC",
             "LDO",
-            "USD",
             "SHIB",
             "BTC",
             "QNT",
@@ -23314,7 +22293,6 @@
             "APT",
             "BNB",
             "XMR",
-            "USD",
             "ENS",
             "OP",
             "1INCH",
@@ -23340,9 +22318,7 @@
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "TUSD"
-      },
+      "ccy_ovr": {},
       "all": []
     },
     {
@@ -23813,165 +22789,118 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "P2PB2B",
       "coins": [
         {
           "name": "1INCH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AAVE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ADA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ALGO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "APE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AVAX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AXS",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAND",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BAT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BCH",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "BNB",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "BNT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "COMP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CRV",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "DOGE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ENJ",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ETH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "GALA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ICX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "IMX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "KNC",
@@ -23981,43 +22910,33 @@
         },
         {
           "name": "LDO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LINK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LRC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LTC",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "MANA",
           "ccy": [
             "BTC",
-            "ETH",
-            "USD"
+            "ETH"
           ]
         },
         {
           "name": "NEXO",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "POWR",
@@ -24028,78 +22947,58 @@
         },
         {
           "name": "SHIB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SNX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SOL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "TRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XAUT",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "XLM",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "XRP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "YFI",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         },
         {
           "name": "ZIL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZRX",
           "ccy": [
-            "BTC",
-            "USD"
+            "BTC"
           ]
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
+      "ccy_ovr": {},
       "all": []
     },
     {
@@ -24115,9 +23014,7 @@
         },
         {
           "name": "ADA",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ALGO",
@@ -24129,15 +23026,11 @@
         },
         {
           "name": "APT",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ARB",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ATOM",
@@ -24145,9 +23038,7 @@
         },
         {
           "name": "AVAX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "AXS",
@@ -24171,21 +23062,15 @@
         },
         {
           "name": "BONK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "BTC",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "CHZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "COMP",
@@ -24197,9 +23082,7 @@
         },
         {
           "name": "DOGE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "DOT",
@@ -24223,15 +23106,11 @@
         },
         {
           "name": "ETH",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FET",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "FIL",
@@ -24267,9 +23146,7 @@
         },
         {
           "name": "LINK",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "LRC",
@@ -24289,9 +23166,7 @@
         },
         {
           "name": "MKR",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "NEO",
@@ -24307,15 +23182,11 @@
         },
         {
           "name": "OP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "PEPE",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "QNT",
@@ -24331,9 +23202,7 @@
         },
         {
           "name": "S",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "SAND",
@@ -24349,9 +23218,7 @@
         },
         {
           "name": "SOL",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "STG",
@@ -24363,9 +23230,7 @@
         },
         {
           "name": "SUI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "THETA",
@@ -24373,9 +23238,7 @@
         },
         {
           "name": "TRX",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "UMA",
@@ -24383,9 +23246,7 @@
         },
         {
           "name": "UNI",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "VET",
@@ -24393,27 +23254,19 @@
         },
         {
           "name": "WAVES",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XLM",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XRP",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "XTZ",
-          "ccy": [
-            "USD"
-          ]
+          "ccy": []
         },
         {
           "name": "ZIL",
@@ -24425,7 +23278,6 @@
         }
       ],
       "ccy_ovr": {
-        "USD": "USDT",
         "TRY": "TL"
       },
       "c_ovr": {
@@ -24797,12 +23649,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "POLONIEX",
@@ -25557,12 +24405,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "SATOSHI_TANGO",
@@ -25695,9 +24539,7 @@
     {
       "name": "TRADEOGRE",
       "coins": [],
-      "ccy_ovr": {
-        "USD": "USDC"
-      },
+      "ccy_ovr": {},
       "all": [
         "ADA",
         "ARRR",
@@ -26561,12 +25403,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "WYRE",
@@ -27336,12 +26174,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "YADIO",
@@ -27592,7 +26426,6 @@
         {
           "name": "BTC",
           "ccy": [
-            "USD",
             "RUR"
           ]
         },
@@ -28337,12 +27170,8 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDT"
-      },
-      "all": [
-        "USD"
-      ]
+      "ccy_ovr": {},
+      "all": []
     },
     {
       "name": "ZONDA",
@@ -28657,9 +27486,7 @@
           "ccy": []
         }
       ],
-      "ccy_ovr": {
-        "USD": "USDC"
-      },
+      "ccy_ovr": {},
       "c_ovr": {
         "BCH": "BCC"
       },
