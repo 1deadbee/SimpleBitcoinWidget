@@ -34,42 +34,7 @@ object Repository {
     private val TAG = Repository::class.java.simpleName
 
     fun downloadJSON() {
-        val context = WidgetApplication.instance
-        try {
-            val prefs = PreferenceManager.getDefaultSharedPreferences(context)
-            val lastModified = prefs.getString(LAST_MODIFIED, context.getString(R.string.json_last_modified))
-            val url = context.getString(R.string.json_url)
-            val client = OkHttpClient.Builder()
-                    .followRedirects(true)
-                    .followSslRedirects(true)
-                    .readTimeout(60, TimeUnit.SECONDS)
-                    .connectTimeout(30, TimeUnit.SECONDS)
-                    .retryOnConnectionFailure(true)
-                    .connectionPool(ConnectionPool(0, 1, TimeUnit.NANOSECONDS))
-                    .build()
-            val request = Request.Builder()
-                    .addHeader("If-Modified-Since", lastModified!!)
-                    .url(url)
-                    .build()
-
-            val response = client.newCall(request).execute()
-            when (response.code) {
-                304 -> Log.d(TAG, "No changes found in JSON file.")
-                200 -> {
-                    Log.d(TAG, "Updated JSON file found.")
-                    response.body?.byteStream()?.use {
-                        val os = context.openFileOutput(CURRENCY_FILE_NAME, Context.MODE_PRIVATE)
-                        it.copyTo(os)
-                        os.closeQuietly()
-                    }
-                    prefs.edit{ putString(LAST_MODIFIED, response.header("Last-Modified")) }
-                    Log.d(TAG, "JSON downloaded.")
-                }
-                else -> Log.d(TAG, "Retrieved status code: " + response.code)
-            }
-        } catch (e: IOException) {
-            Log.e(TAG, "Error downloading JSON.", e)
-        }
+        // Disabled - using local bundled JSON instead of remote
     }
 
     fun downloadCustomIcon(widget: Widget) {
