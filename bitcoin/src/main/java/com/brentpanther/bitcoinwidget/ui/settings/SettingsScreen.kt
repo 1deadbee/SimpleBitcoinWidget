@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -30,6 +31,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -62,6 +64,7 @@ import java.text.DecimalFormatSymbols
 import java.text.ParseException
 import java.util.Locale
 import kotlin.math.roundToInt
+import kotlinx.coroutines.launch
 
 @Composable
 fun SettingsScreen(
@@ -76,6 +79,7 @@ fun SettingsScreen(
     val activity = LocalActivity.current
     val currencies = settingsViewModel.getCurrencies()
     val exchanges = settingsViewModel.exchanges
+    val coroutineScope = rememberCoroutineScope()
 
     SettingScreenContent(
         widget = widget,
@@ -87,14 +91,16 @@ fun SettingsScreen(
         },
         actions = settingsViewModel,
         onSave = {
-            settingsViewModel.save()
-            if (navEntries.any { it.destination.route == "home" }) {
-                navController.navigateUp()
-            } else {
-                activity?.apply {
-                    val resultIntent = Intent().putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId)
-                    setResult(Activity.RESULT_OK, resultIntent)
-                    finish()
+            coroutineScope.launch {
+                settingsViewModel.save()
+                if (navEntries.any { it.destination.route == "home" }) {
+                    navController.navigateUp()
+                } else {
+                    activity?.apply {
+                        val resultIntent = Intent().putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, widgetId)
+                        setResult(Activity.RESULT_OK, resultIntent)
+                        finish()
+                    }
                 }
             }
         }
@@ -261,6 +267,8 @@ fun ValueSettings(
                 Text(stringResource(R.string.dialog_wallet_address))
             },
             value = widget.address,
+            keyboardType = KeyboardType.Text,
+            defaultValue = null,
             onChange = { value ->
                 actions.setAddress(value)
             }

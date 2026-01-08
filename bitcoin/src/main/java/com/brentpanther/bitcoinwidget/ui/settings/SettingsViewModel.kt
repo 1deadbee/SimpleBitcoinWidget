@@ -20,10 +20,13 @@ import com.brentpanther.bitcoinwidget.db.WidgetDatabase
 import com.brentpanther.bitcoinwidget.exchange.Exchange
 import com.brentpanther.bitcoinwidget.exchange.ExchangeData
 import com.brentpanther.bitcoinwidget.strategy.data.WidgetDataStrategy
+import com.brentpanther.bitcoinwidget.strategy.display.WidgetDisplayStrategy
+import com.brentpanther.bitcoinwidget.strategy.presenter.RemoteWidgetPresenter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.text.DecimalFormat
 import java.util.Currency
 import java.util.Locale
@@ -38,10 +41,14 @@ class SettingsViewModel : ViewModel(), SettingsActions {
     val exchanges = mutableStateListOf<Exchange>()
     val widgetFlow = MutableStateFlow<Widget?>(null)
     private var widgetCopy: Widget? = null
-    private val widget by lazy { widgetCopy ?: throw IllegalStateException() }
+    private val widget: Widget
+        get() = widgetCopy ?: throw IllegalStateException()
+    private var loadedWidgetId: Int? = null
 
     fun loadData(widgetId: Int) {
-        if (widgetCopy != null) return
+        if (widgetCopy != null && loadedWidgetId == widgetId) return
+        widgetCopy = null
+        loadedWidgetId = widgetId
         viewModelScope.launch(Dispatchers.IO) {
             var dbWidget = dao.getByWidgetId(widgetId)
             if (dbWidget == null) {
@@ -231,12 +238,26 @@ class SettingsViewModel : ViewModel(), SettingsActions {
         widget.twoDigitModeColorIndicator = isEnabled
     }
 
-    fun save() = viewModelScope.launch(Dispatchers.IO) {
-        if (widget.state == WidgetState.DRAFT) {
-            widget.state = WidgetState.CURRENT
-        }
+    suspend fun save() = withContext(Dispatchers.IO) {
+        val wasDraft = widget.state == WidgetState.DRAFT
         dao.update(widget)
-        WidgetProvider.refreshWidgets(WidgetApplication.instance, widget.widgetId)
+        
+        val context = WidgetApplication.instance
+        val strategy = WidgetDataStrategy.getStrategy(widget.widgetId)
+        val freshWidget = strategy.widget ?: return@withContext
+        val widgetPresenter = RemoteWidgetPresenter(context, freshWidget)
+        val success = strategy.loadData(false)
+        strategy.save()
+        if (success) {
+            val displayStrategy = WidgetDisplayStrategy.getStrategy(context, freshWidget, widgetPresenter)
+            displayStrategy.refresh()
+            displayStrategy.save()
+        }
+        
+        if (wasDraft) {
+            widget.state = WidgetState.CURRENT
+            dao.update(widget)
+        }
     }
 
 

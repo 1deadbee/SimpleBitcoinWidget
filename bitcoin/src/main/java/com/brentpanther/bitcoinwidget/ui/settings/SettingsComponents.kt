@@ -159,6 +159,8 @@ fun SettingsEditText(
     subtitle: (@Composable () -> Unit)? = null,
     dialogText: (@Composable () -> Unit)? = null,
     value: String? = null,
+    keyboardType: KeyboardType = KeyboardType.Decimal,
+    defaultValue: String? = "1",
     onChange: (String?) -> Unit
 ) {
     var dialogVisible by remember { mutableStateOf(false) }
@@ -198,18 +200,20 @@ fun SettingsEditText(
                         OutlinedTextField(
                             value = tempValue ?: "",
                             keyboardOptions = KeyboardOptions(
-                                keyboardType = KeyboardType.Decimal,
+                                keyboardType = keyboardType,
                                 imeAction = ImeAction.Done
                             ),
                             keyboardActions = KeyboardActions {
-                                onChange(tempValue ?: "1")
+                                onChange(tempValue ?: defaultValue)
                                 dialogVisible = false
                             },
                             singleLine = true,
                             onValueChange = {
                                 tempValue = it
                             },
-                            modifier = Modifier.padding(vertical = 8.dp)
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 8.dp)
                         )
                         Row(
                             Modifier
