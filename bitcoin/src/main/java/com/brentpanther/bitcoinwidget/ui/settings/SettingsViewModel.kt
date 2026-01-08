@@ -3,6 +3,7 @@ package com.brentpanther.bitcoinwidget.ui.settings
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.brentpanther.bitcoinwidget.BlockchainExplorer
 import com.brentpanther.bitcoinwidget.Coin
 import com.brentpanther.bitcoinwidget.NightMode
 import com.brentpanther.bitcoinwidget.Repository.downloadCustomIcon
@@ -238,6 +239,11 @@ class SettingsViewModel : ViewModel(), SettingsActions {
         widget.twoDigitModeColorIndicator = isEnabled
     }
 
+    override fun setBlockchainExplorer(explorer: BlockchainExplorer) = emit {
+        widget.blockchainExplorer = explorer
+        updateData()
+    }
+
     suspend fun save() = withContext(Dispatchers.IO) {
         val wasDraft = widget.state == WidgetState.DRAFT
         dao.update(widget)
@@ -282,4 +288,5 @@ interface SettingsActions {
     fun setPriceType(type: PriceType) {}
     fun setShowTwoDigitMode(isEnabled: Boolean) {}
     fun setTwoDigitModeColorIndicator(isEnabled: Boolean) {}
+    fun setBlockchainExplorer(explorer: BlockchainExplorer) {}
 }

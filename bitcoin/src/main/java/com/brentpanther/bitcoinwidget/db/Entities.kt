@@ -3,6 +3,7 @@ package com.brentpanther.bitcoinwidget.db
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import com.brentpanther.bitcoinwidget.BlockchainExplorer
 import com.brentpanther.bitcoinwidget.Coin
 import com.brentpanther.bitcoinwidget.NightMode
 import com.brentpanther.bitcoinwidget.Theme
@@ -42,7 +43,8 @@ data class Widget(
     var lastUpdated: Long,
     var state: WidgetState,
     var showTwoDigitMode: Boolean = false,
-    var twoDigitModeColorIndicator: Boolean = true
+    var twoDigitModeColorIndicator: Boolean = true,
+    var blockchainExplorer: BlockchainExplorer = BlockchainExplorer.MEMPOOL_SPACE
 ) {
 
     fun coinName() = if (coinCustomId != null) coinCustomName ?: coin.coinName else coin.coinName

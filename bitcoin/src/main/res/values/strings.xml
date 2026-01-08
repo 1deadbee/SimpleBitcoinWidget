@@ -32,12 +32,14 @@
     <string name="title_coin_select">Select Coin:</string>
     <string name="title_wallet">Wallet Data</string>
     <string name="title_wallet_bitcoin">Wallet Data (Enter either amount or address)</string>
+    <string name="title_blockchain_explorer">Blockchain Explorer</string>
 
     <string name="summary_fixed_size">Keep text size consistent across all widgets</string>
     <string name="summary_bitcoin_only">Create only Bitcoin widgets</string>
     <string name="summary_refresh_interval">Every %s</string>
     <string name="summary_currency">Use %s as currency</string>
     <string name="summary_exchange">Get data from %s</string>
+    <string name="summary_blockchain_explorer">Get address balance from %s</string>
     <string name="summary_units">Show %1$s as %2$s</string>
     <string name="summary_inverse">Show price of %1$s in %2$s</string>
     <string name="summary_decimals_auto">Auto</string>
@@ -112,6 +114,14 @@
         <item>LOCAL</item>
         <item>ISO</item>
         <item>NONE</item>
+    </string-array>
+    <string-array name="blockchainExplorers">
+        <item>mempool.space</item>
+        <item>blockchain.info</item>
+    </string-array>
+    <string-array name="blockchainExplorerValues">
+        <item>MEMPOOL_SPACE</item>
+        <item>BLOCKCHAIN_INFO</item>
     </string-array>
     <string name="json_last_modified" translatable="false">Sun, 28 Sep 2025 17:04:09 GMT</string>
     <string name="json_url" translatable="false">https://www.brentpanther.com/cryptowidgetcoins_v2.json</string>

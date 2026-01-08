@@ -46,6 +46,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
+import com.brentpanther.bitcoinwidget.BlockchainExplorer
 import com.brentpanther.bitcoinwidget.Coin
 import com.brentpanther.bitcoinwidget.NightMode
 import com.brentpanther.bitcoinwidget.R
@@ -271,6 +272,23 @@ fun ValueSettings(
             defaultValue = null,
             onChange = { value ->
                 actions.setAddress(value)
+            }
+        )
+        SettingsList(
+            icon = {
+                Icon(painterResource(R.drawable.ic_outline_account_balance_24), null)
+            },
+            title = {
+                Text(stringResource(R.string.title_blockchain_explorer))
+            },
+            subtitle = {
+                Text(stringResource(R.string.summary_blockchain_explorer, widget.blockchainExplorer.explorerName))
+            },
+            value = widget.blockchainExplorer.name,
+            items = stringArrayResource(R.array.blockchainExplorers).toList(),
+            itemValues = stringArrayResource(R.array.blockchainExplorerValues).toList(),
+            onChange = {
+                actions.setBlockchainExplorer(BlockchainExplorer.valueOf(it))
             }
         )
     }
@@ -631,7 +649,8 @@ fun PriceWidgetPreview() {
         state = WidgetState.DRAFT,
         address = null,
         showTwoDigitMode = false,
-        twoDigitModeColorIndicator = true
+        twoDigitModeColorIndicator = true,
+        blockchainExplorer = BlockchainExplorer.MEMPOOL_SPACE
     )
     MaterialTheme {
         SettingScreenContent(
@@ -679,7 +698,8 @@ fun ValueWidgetPreview() {
         state = WidgetState.DRAFT,
         address = null,
         showTwoDigitMode = false,
-        twoDigitModeColorIndicator = true
+        twoDigitModeColorIndicator = true,
+        blockchainExplorer = BlockchainExplorer.MEMPOOL_SPACE
     )
     MaterialTheme {
         SettingScreenContent(

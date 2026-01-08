@@ -65,3 +65,8 @@ enum class WidgetType(@StringRes val widgetName: Int, @StringRes val widgetSumma
     VALUE(R.string.widget_value_name, R.string.widget_value_summary);
 }
 
+enum class BlockchainExplorer(val explorerName: String) {
+    MEMPOOL_SPACE("mempool.space"),
+    BLOCKCHAIN_INFO("blockchain.info");
+}
+
